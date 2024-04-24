@@ -1,0 +1,21 @@
+{
+  "name": "@darkroom.engineering/codemods",
+  "version": "1.0.0",
+  "description": "codemods for when we change names of our libraries, sorry for that",
+  "main": "sf-to-darkroom.js",
+  "author": "darkroom.engineering",
+  "license": "MIT",
+  "keywords": [
+    "codemod",
+    "lenis",
+    "sf",
+    "darkroom"
+  ],
+  "bin": {
+    "sf-to-darkroom": "./sf-to-darkroom.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {}
+}
