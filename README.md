@@ -13,21 +13,28 @@ npx @darkroom.engineering/codemods
 
 ## The codemod will:
 
-Detect the package manager (npm, Yarn, or pnpm).
+- Detect the package manager (npm, Yarn, or pnpm).
 
-Update the dependencies in package.json:
+- Update the dependencies in package.json:
 
-Replace @studio-freight/lenis and @studio-freight/react-lenis with lenis.
+- Replace @studio-freight/lenis and @studio-freight/react-lenis with lenis.
 
-Update other @studio-freight/ dependencies to @darkroom.engineering/.
+- Update other @studio-freight/ dependencies to @darkroom.engineering/.
 
-Remove @studio-freight packages from the lockfile.
-Install the updated dependencies.
+- Remove @studio-freight packages from the lockfile.
+  
+- Install the updated dependencies.
 
-Process JavaScript files, renaming package imports according to the updated dependencies.i.e.:
+- Process JavaScript files, renaming package imports according to the updated dependencies.i.e.:
 
-@studio-freight/lenis -> lenis
-@studio-freight/react-lenis -> lenis/react
-@studio-freight/... -> @darkroom.engineering/...
+`@studio-freight/lenis -> lenis`
+
+`@studio-freight/react-lenis -> lenis/react`
+
+`@studio-freight/... -> @darkroom.engineering/...`
+
+## The codemod won't:
+
+-  Make you breakfast
 
 Before running the codemod, it is recommended to backup your project files and ensure your project is under version control.
